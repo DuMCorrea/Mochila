@@ -1,0 +1,304 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Fundo preto para o body */
+    font-family: 'Baloo Bhai 2', cursive; /* Aplicando a fonte Baloo Bhai */
+}
+
+.container {
+    width: 84%; /* Largura da div principal */
+    height: 98%; /* Altura da div principal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; /* Fundo preto para a div principal */
+    border-radius: 20px; /* Canto arredondado */
+    font-family: 'Baloo Bhai 2', cursive; /* Aplicando a fonte Baloo Bhai */
+}
+
+.background-rectangle {
+    width: 100%;
+    height: 100%;
+    background: #000000; /* Fundo preto para o retângulo principal */
+    border-radius: 20px; /* Cantos arredondados */
+    display: flex;
+}
+
+.left-div {
+    width: 22%; /* 25% da largura da tela */
+    height: 100%;
+    background-color: #000000; /* Fundo preto para a div esquerda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0 0 20px; /* Canto arredondado à esquerda */
+    font-family: 'Baloo Bhai 2', cursive; /* Aplicando a fonte Baloo Bhai */
+}
+
+.right-div {
+    width: calc(110% - 20px); /* 73% da largura da tela menos a margem */
+    height: calc(92% - 20px); /* 95% da altura menos a margem */
+    background-color: #363636; /* Fundo cinza para a div direita */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px; /* Margem em torno da div da direita */
+    border-radius: 20px; /* Cantos arredondados */
+    font-family: 'Baloo Bhai 2', cursive; /* Aplicando a fonte Baloo Bhai */
+}
+
+
+/* DIV DA ESQUERDA */
+
+.content-left {
+    text-align: justify; /* Justifica o texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha os elementos ao topo da div */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100%; /* Ocupa toda a altura da div esquerda */
+    padding-top: 100px; /* Adiciona um espaçamento do topo */
+}
+
+.left-div h1 {
+    color: white; /* Cor branca para o título */
+    font-size: 50px; /* Tamanho da fonte do título */
+    margin-bottom: -20px; /* Espaçamento negativo para aproximar o parágrafo */
+    font-weight: 900;
+    width: 100%; /* Para garantir que a justificação funcione */
+    text-align: justify; /* Justifica o texto do título */
+    position: relative;
+    left: 35px;
+}
+
+.left-div p {
+    color: white; /* Cor branca para a frase */
+    font-size: 20px; /* Tamanho da fonte da frase */
+    margin-top: 0; /* Remove a margem superior do parágrafo */
+    width: 100%; /* Para garantir que a justificação funcione */
+    text-align: justify; /* Justifica o texto da frase */
+    font-weight: 100;
+    position: relative;
+    left: 35px;
+}
+
+.image-container {
+    width: 190px; /* Largura do quadrado */
+    height: 190px; /* Altura do quadrado */
+    background: radial-gradient(547.21% 823.76% at 94.51% 88.04%, #1D1C1C 0%, #837E7E 100%); /* Fundo com gradiente */
+    border-radius: 15px; /* Borda arredondada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px; /* Espaçamento acima da imagem */
+    position: relative;
+    left: 30px;
+}
+
+.image-container img {
+    width: 85%; /* Ajusta o tamanho da imagem para caber no container */
+    height: 85%; /* Ajusta o tamanho da imagem para caber no container */
+    border-radius: 15px; /* Borda arredondada da imagem para combinar com o container */
+}
+
+.desequipar-btn {
+    margin-top: 20px; /* Espaçamento acima do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background: linear-gradient(90deg, #3CB3D6 49.9%, #1F5E70 100%); /* Fundo com gradiente */
+    color: white; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito no texto */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    text-align: center; /* Centraliza o texto no botão */
+    width: 189px; /* Largura do botão */
+    position: relative;
+    left: 30px;
+}
+
+.todas {
+    margin-top: 10px; /* Espaçamento acima do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background: linear-gradient(90deg, #3CB3D6 49.9%, #1F5E70 100%); /* Fundo com gradiente */
+    color: white; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito no texto */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    text-align: center; /* Centraliza o texto no botão */
+    width: 189px; /* Largura do botão */
+    position: relative;
+    left: 30px;
+}
+
+
+/* DIV DA DIREITA */
+
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha os elementos ao topo da div */
+    align-items: flex-start; /* Alinha os elementos à esquerda */
+    height: 100%; /* Ocupa toda a altura da div direita */
+    padding: 20px; /* Adiciona um espaçamento interno */
+}
+
+.right-div h1 {
+    color: white; /* Cor branca para o título */
+    font-size: 50px; /* Tamanho da fonte do título */
+    margin-bottom: -20px; /* Espaçamento negativo para aproximar o parágrafo */
+    font-weight: 900;
+    width: 100%; /* Para garantir que a justificação funcione */
+    text-align: left; /* Alinha o texto à esquerda */
+    position: relative; /* Posicionamento relativo para o elemento abaixo */
+    right: 160px;
+    bottom: 25px;
+}
+
+.right-div p {
+    color: white; /* Cor branca para a frase */
+    font-size: 20px; /* Tamanho da fonte da frase */
+    margin-top: 0; /* Remove a margem superior do parágrafo */
+    width: 100%; /* Para garantir que a justificação funcione */
+    text-align: left; /* Alinha o texto à esquerda */
+    font-weight: 100;
+    position: relative; /* Posicionamento relativo para o elemento abaixo */
+    right: 160px;
+    bottom: 30px;
+}
+
+.squares-container {
+    display: flex; /* Exibe os quadrados em linha */
+    justify-content: center; /* Centraliza os quadrados horizontalmente */
+    align-items: center; /* Centraliza os quadrados verticalmente */
+    width: 100%; /* Largura total para o contêiner */
+    height: 50%; /* Altura do contêiner */
+    position: relative;
+    right: 170px;
+    bottom: 40px;
+}
+
+.squares-containerr {
+    display: flex; /* Exibe os quadrados em linha */
+    justify-content: center; /* Centraliza os quadrados horizontalmente */
+    align-items: center; /* Centraliza os quadrados verticalmente */
+    width: 100%; /* Largura total para o contêiner */
+    height: 50%; /* Altura do contêiner */
+    position: relative;
+    right: 170px;
+    bottom: 30px;
+
+}
+.squares-containerrr {
+    display: flex; /* Exibe os quadrados em linha */
+    justify-content: center; /* Centraliza os quadrados horizontalmente */
+    align-items: center; /* Centraliza os quadrados verticalmente */
+    width: 100%; /* Largura total para o contêiner */
+    height: 50%; /* Altura do contêiner */
+    position: relative;
+    right: 170px;
+    bottom: 20px;
+}
+
+.square {
+    width: 140px; /* Largura dos quadrados */
+    height: 140px; /* Altura dos quadrados */
+    background: radial-gradient(547.21% 823.76% at 94.51% 88.04%, #1D1C1C 0%, #837E7E 100%); /* Gradiente de fundo */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin: 0 10px 0px 10px; /* Espaçamento entre os quadrados e entre as linhas */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+}
+
+.square-image {
+    width: 40px; /* Tamanho da imagem dentro dos quadrados */
+    height: 5px;
+    position: relative;
+    bottom: 50px;
+}
+
+.square-image-unic {
+    width: 40px; /* Tamanho da imagem dentro dos quadrados */
+    height: 5px;
+    position: relative;
+    bottom: 50px;
+    left: 60px;
+}
+
+.shots-image {
+    width: 90%; /* Tamanho da imagem dentro dos quadrados */
+    height: 70%;
+    position: relative;
+    top: 10px;
+    right: 20px;
+}
+
+
+.shortcuts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    right: 170px;
+    bottom: 80px;
+}
+
+.atalhos-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    right: 0px;
+    bottom: 30px;
+}
+
+.atalhos-image {
+    width: 260px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 5px;
+    position: relative;
+    bottom: 12px;
+    left: 10px;
+}
+
+.atalhos-paragraph {
+    color: white;
+    font-size: 20px; /* Ajuste o tamanho do texto conforme necessário */
+    position: relative;
+    top: -58px;
+    left: 500px;
+}
+
+.arma-image {
+    width: 70px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 70px;
+    position: relative;
+    bottom: 1px;
+    left: 13px;
+}
+
+.cell-image {
+    width: 80px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 80px;
+    position: relative;
+    bottom: 1px;
+    left: 20px;
+}
+
+.square-image-unicc {
+    width: 40px; /* Tamanho da imagem dentro dos quadrados */
+    height: 5px;
+    position: relative;
+    bottom: 50px;
+    left: 80px;
+}
+
